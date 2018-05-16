@@ -5,7 +5,8 @@ export const createUser = {
 		firstname: Joi.string().min(2).required(),
 		lastname: Joi.string().min(2).required(),
 		email: Joi.string().email().required(),
-		password: Joi.string().min(8).required()
+		password: Joi.string().min(8).required(),
+		code: Joi.string().min(8).required()
 	})
 }
 
